@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solve Saga | Trending Products & Lifestyle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="nav-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo">
+          <h2>SOLVE SAGA<span class="dot">.</span></h2>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active" data-lang-en="Home" data-lang-ur="ہوم">Home</a>
+        <a href="about.html" data-lang-en="About" data-lang-ur="ہمارے بارے میں">About</a>
+        <a href="products.html" data-lang-en="Products" data-lang-ur="پروڈکٹس">Products</a>
+        <a href="contact.html" data-lang-en="Contact" data-lang-ur="رابطہ">Contact</a>
+      </div>
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button id="lang-en" class="lang-btn active">EN</button>
+          <button id="lang-ur" class="lang-btn">اردو</button>
+        </div>
+        <a href="https://wa.me/923000000000" class="btn-primary" target="_blank" data-lang-en="Order on WhatsApp" data-lang-ur="واٹس ایپ پر آرڈر کریں">Order on WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-content">
+          <span class="badge" data-lang-en="Est. 2026 • Exclusive Collection" data-lang-ur="قیام 2026 • خاص کلیکشن">Est. 2026 • Exclusive Collection</span>
+          <h1 data-lang-en="Discover Today's Most Trending Products" data-lang-ur="آج کے سب سے مشہور پروڈکٹس دریافت کریں">Discover Today's Most Trending Products</h1>
+          <p data-lang-en="From viral Labubu Dolls and aesthetic Tumblers to smart Watches and Sugar Control accessories. Explore the best lifestyle collection at Solev Saga." data-lang-ur="وائرل لبوبو ڈولز اور خوبصورت ٹمبلرز سے لے کر سمارٹ واچز اور شوگر کنٹرول کی اشیاء تک۔ سولیو ساگا پر بہترین لائف سٹائل کلیکشن دیکھیں۔">From viral Labubu Dolls and aesthetic Tumblers to smart Watches and Sugar Control accessories. Explore the best lifestyle collection at Solev Saga.</p>
+          
+          <div class="hero-buttons">
+            <a href="products.html" class="btn-primary" data-lang-en="Explore Store" data-lang-ur="اسٹور دیکھیں">Explore Store</a>
+            <a href="https://wa.me/923000000000" target="_blank" class="btn-outline" data-lang-en="Order via WhatsApp" data-lang-ur="واٹس ایپ پر رابطہ کریں">Order via WhatsApp</a>
+          </div>
+
+          <!-- Stats Grid Box -->
+          <div class="stats-grid-box">
+            <div class="stat-box">
+              <span class="stat-number">2026</span>
+              <span class="stat-label" data-lang-en="ESTABLISHED" data-lang-ur="قیام">ESTABLISHED</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">20K+</span>
+              <span class="stat-label" data-lang-en="HAPPY CUSTOMERS" data-lang-ur="خوشگوار گاہک">HAPPY CUSTOMERS</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100+</span>
+              <span class="stat-label" data-lang-en="TRENDING PRODUCTS" data-lang-ur="مشہور پروڈکٹس">TRENDING PRODUCTS</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label" data-lang-en="ORIGINAL & GUARANTEED QUALITY" data-lang-ur="اصل اور معیاری اشیاء">ORIGINAL & GUARANTEED QUALITY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Studio -->
+        <div class="hero-3d-wrapper">
+          <div class="studio-badge" data-lang-en="Interactive 3D Studio" data-lang-ur="انٹرایکٹو تھری ڈی اسٹوڈیو">Interactive 3D Studio</div>
+          <div id="canvas-container">
+            <canvas id="shoe-canvas"></canvas>
+          </div>
+          <p class="studio-hint" data-lang-en="Drag mouse to rotate the featured 3D model" data-lang-ur="ماڈل کو گھمانے کے لیے ماؤس سحب کریں">Drag mouse to rotate the featured 3D model</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="section-title">
+        <h2 data-lang-en="Featured Collections" data-lang-ur="نمایاں کلیکشن">Featured Collections</h2>
+        <p data-lang-en="Top trending products carefully selected for you." data-lang-ur="آپ کے لیے خاص طور پر منتخب کردہ ٹاپ پروڈکٹس۔">Top trending products carefully selected for you.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3 data-lang-en="Labubu Dolls" data-lang-ur="لبوبو ڈولز">Labubu Dolls</h3>
+          <p data-lang-en="Viral collectible Labubu plushies and figures with authentic packaging." data-lang-ur="اصل پیکنگ کے ساتھ وائرل کلیکٹبل لبوبو پالش اور فگرز۔">Viral collectible Labubu plushies and figures with authentic packaging.</p>
+        </div>
+        <div class="feature-card">
+          <h3 data-lang-en="Aesthetic Tumblers" data-lang-ur="خوبصورت ٹمبلرز">Aesthetic Tumblers</h3>
+          <p data-lang-en="Insulated stainless steel tumblers to keep your drinks hot or ice-cold all day." data-lang-ur="اسٹینلیس اسٹیل ٹمبلرز جو آپ کے مشروبات کو سارا دن گرم یا ٹھنڈا رکھیں۔">Insulated stainless steel tumblers to keep your drinks hot or ice-cold all day.</p>
+        </div>
+        <div class="feature-card">
+          <h3 data-lang-en="Sugar Control Accessories" data-lang-ur="شوگر کنٹرول اشیاء">Sugar Control Accessories</h3>
+          <p data-lang-en="Modern wellness accessories designed to support health and balanced lifestyle." data-lang-ur="صحت اور متوازن طرز زندگی کو سپورٹ کرنے کے لیے جدید ویلنیس لوازمات۔">Modern wellness accessories designed to support health and balanced lifestyle.</p>
+        </div>
+        <div class="feature-card">
+          <h3 data-lang-en="Luxury Watches" data-lang-ur="لژری واچز">Luxury Watches</h3>
+          <p data-lang-en="Sleek, modern timepieces combining elegance with daily durability." data-lang-ur="خوبصورتی اور پائیداری کا امتزاج پیش کرنے والی جدید گھڑیاں۔">Sleek, modern timepieces combining elegance with daily durability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+      <div class="section-title">
+        <span class="sub-badge" data-lang-en="OUR PARTNERS & CLIENTS" data-lang-ur="ہمارے شراکت دار اور گاہک">OUR PARTNERS & CLIENTS</span>
+        <h2 data-lang-en="Trusted Across Multiple Industries" data-lang-ur="متعدد صنعتوں میں قابل اعتماد">Trusted Across Multiple Industries</h2>
+        <p data-lang-en="Top brands, retail stores, and industry leaders rely on our quality products." data-lang-ur="ٹاپ برانڈز اور ریٹل اسٹورز ہماری معیاری مصنوعات پر بھروسہ کرتے ہیں۔">Top brands, retail stores, and industry leaders rely on our quality products.</p>
+      </div>
+
+      <div class="logo-slider">
+        <div class="logo-track">
+          <div class="logo-slide"><span>Orient Textile</span></div>
+          <div class="logo-slide"><span>Genix Pharma</span></div>
+          <div class="logo-slide"><span>Pharmatec</span></div>
+          <div class="logo-slide"><span>Indus Hospital</span></div>
+          <div class="logo-slide"><span>Herbion</span></div>
+          <div class="logo-slide"><span>Hilton Pharma</span></div>
+          <div class="logo-slide"><span>Orient Textile</span></div>
+          <div class="logo-slide"><span>Genix Pharma</span></div>
+          <div class="logo-slide"><span>Pharmatec</span></div>
+          <div class="logo-slide"><span>Indus Hospital</span></div>
+          <div class="logo-slide"><span>Herbion</span></div>
+          <div class="logo-slide"><span>Hilton Pharma</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-card">
+        <h2 data-lang-en="Want to place a custom order or inquire about products?" data-lang-ur="کیا آپ کوئی آرڈر دینا چاہتے ہیں یا معلومات لینا چاہتے ہیں؟">Want to place a custom order or inquire about products?</h2>
+        <p data-lang-en="Tell us the product details, quantity, or custom requirements. We will instantly get back to you with pricing and delivery timelines." data-lang-ur="ہمیں پروڈکٹ کی تفصیلات اور تعداد بتائیں۔ ہم فوری طور پر آپ سے قیمت اور ڈیلیوری کے وقت کے ساتھ رابطہ کریں گے۔">Tell us the product details, quantity, or custom requirements. We will instantly get back to you with pricing and delivery timelines.</p>
+
+        <div class="cta-buttons">
+          <a href="https://wa.me/923000000000" target="_blank" class="cta-btn cta-whatsapp">
+            <span data-lang-en="WhatsApp" data-lang-ur="واٹس ایپ">WhatsApp</span>
+          </a>
+          <a href="tel:03000000000" class="cta-btn cta-call">
+            <span>0300 0000000</span>
+          </a>
+          <a href="mailto:support@solevsaga.com" class="cta-btn cta-email">
+            <span data-lang-en="Email us" data-lang-ur="ای میل کریں">Email us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>SOLVE SAGA</h3>
+        <p data-lang-en="Your ultimate destination for viral and premium lifestyle products." data-lang-ur="وائرل اور پریمیم لائف اسٹائل مصنوعات کے لیے آپ کی بہترین منزل۔">Your ultimate destination for viral and premium lifestyle products.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-lang-en="Quick Links" data-lang-ur="فوری لنکس">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-lang-en="Home" data-lang-ur="ہوم">Home</a></li>
+          <li><a href="about.html" data-lang-en="About" data-lang-ur="ہمارے بارے میں">About</a></li>
+          <li><a href="products.html" data-lang-en="Products" data-lang-ur="پروڈکٹس">Products</a></li>
+          <li><a href="contact.html" data-lang-en="Contact" data-lang-ur="رابطہ">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-lang-en="Contact Us" data-lang-ur="رابطہ کریں">Contact Us</h4>
+        <p>Email: support@solevsaga.com</p>
+        <p>Phone: +92 300 0000000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-lang-en="&copy; 2026 Solev Saga. All rights reserved." data-lang-ur="&copy; 2026 سولیو ساگا۔ جملہ حقوق محفوظ ہیں۔">&copy; 2026 Solev Saga. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
